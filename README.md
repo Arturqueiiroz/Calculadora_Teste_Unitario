@@ -1,71 +1,77 @@
-# Calculadora - Teste Unitario
+# Calculadora — Testes Unitários
 
-Projeto de uma calculadora simples desenvolvida em C# (.NET) com implementacao de testes unitarios utilizando xUnit. Desenvolvido no contexto academico para pratica de testes automatizados e garantia de qualidade de codigo.
+Projeto de uma calculadora simples desenvolvida em C# (.NET), com implementação de testes unitários utilizando xUnit. Desenvolvido no contexto acadêmico para a prática de testes automatizados e a aplicação de conceitos relacionados à qualidade de código.
 
-## Visao Geral
+## Visão Geral
 
-Este projeto foi desenvolvido como parte de atividades academicas com o objetivo de aplicar conceitos de teste unitario em C#. A calculadora opera com numeros inteiros e reais, oferecendo operacoes basicas de soma, subtracao, multiplicacao e divisao, todas validadas por meio de testes automatizados.
+Este projeto foi desenvolvido como parte de atividades acadêmicas com o objetivo de aplicar conceitos de testes unitários em C#.
+
+A calculadora realiza operações com números inteiros e reais, oferecendo funcionalidades básicas de soma, subtração, multiplicação e divisão. Todas as operações são validadas por meio de testes automatizados.
 
 ## Funcionalidades
 
-- **Operacoes matematicas basicas**:
-  - Soma de dois numeros;
-  - Subtracao de dois numeros;
-  - Multiplicacao de dois numeros;
-  - Divisao de dois numeros.
-- **Testes unitarios**: cobertura de testes para todas as operacoes da calculadora;
-- **Validacao de casos de teste**: incluindo testes para operacoes com numeros positivos, negativos e zero.
+* **Operações matemáticas básicas:**
+
+  * Soma de dois números;
+  * Subtração de dois números;
+  * Multiplicação de dois números;
+  * Divisão de dois números.
+* **Testes unitários:** testes para validar as operações da calculadora;
+* **Validação de diferentes cenários:** testes envolvendo números positivos, negativos e zero.
 
 ## Estrutura do Projeto
 
-```
+```text
 Calculadora_Teste_Unitario/
-├── Calculadora/              # Projeto principal da calculadora
-│   ├── Calculadora.csproj    # Configuracao do projeto (.NET 8.0)
-│   └── Calculator.cs         # Classe Calculator com as operacoes
-├── Calculadora.Test/         # Projeto de testes unitarios
-│   ├── Calculadora.Test.csproj  # Configuracao dos testes (xUnit)
-│   └── CalculatorTest.cs     # Classe de testes com os casos de teste
-├── Calculadora.sln           # Solucao do Visual Studio
-├── .gitignore                # Arquivo de ignoracao do Git
-└── README.md                 # Documentacao do projeto
+├── Calculadora/                  # Projeto principal da calculadora
+│   ├── Calculadora.csproj        # Configuração do projeto (.NET 8.0)
+│   └── Calculator.cs             # Classe Calculator com as operações
+├── Calculadora.Test/             # Projeto de testes unitários
+│   ├── Calculadora.Test.csproj   # Configuração do projeto de testes
+│   └── CalculatorTest.cs         # Classe com os testes unitários
+├── Calculadora.sln               # Solução do Visual Studio
+├── .gitignore                    # Arquivo de configuração do Git
+└── README.md                     # Documentação do projeto
 ```
 
 ## Tecnologias Utilizadas
 
-- **C#**: linguagem de programacao;
-- **.NET 8.0**: framework de desenvolvimento;
-- **xUnit**: framework de testes unitarios;
-- **FluentAssertions** (opcional): biblioteca para assertions mais legiveis nos testes;
-- **coverlet.collector**: coleta de cobertura de codigo.
+* **C#:** linguagem de programação utilizada no desenvolvimento;
+* **.NET 8.0:** plataforma utilizada para o desenvolvimento da aplicação;
+* **xUnit:** framework utilizado para a implementação dos testes unitários;
+* **coverlet.collector:** ferramenta utilizada para coleta de cobertura de código.
 
 ## Como Executar
 
-### Pre-requisitos
+### Pré-requisitos
 
-- .NET 8.0 SDK instalado;
-- Visual Studio 2022 ou VS Code com extensao C#;
-- Git para clonar o repositorio.
+* .NET 8.0 SDK instalado;
+* Visual Studio 2022 ou VS Code com a extensão C#;
+* Git para clonar o repositório.
 
 ### Passos
 
-1. Clone o repositorio:
+1. Clone o repositório:
+
    ```bash
    git clone https://github.com/Arturqueiiroz/Calculadora_Teste_Unitario.git
    cd Calculadora_Teste_Unitario
    ```
 
-2. Restaure as dependencias:
+2. Restaure as dependências:
+
    ```bash
    dotnet restore
    ```
 
 3. Compile o projeto:
+
    ```bash
    dotnet build
    ```
 
-4. Execute os testes unitarios:
+4. Execute os testes unitários:
+
    ```bash
    dotnet test
    ```
@@ -73,26 +79,31 @@ Calculadora_Teste_Unitario/
 ### Executar no Visual Studio
 
 1. Abra o arquivo `Calculadora.sln` no Visual Studio;
-2. No Gerenciador de Testes, execute todos os testes para validar as operacoes.
+2. Acesse o Gerenciador de Testes;
+3. Execute os testes para validar as operações da calculadora.
 
-## Contexto Academico
+## Contexto Acadêmico
 
-Este projeto foi desenvolvido como parte de atividades academicas, com foco em:
+Este projeto foi desenvolvido como parte de atividades acadêmicas, com foco na aplicação prática de conceitos relacionados ao desenvolvimento em C# e à realização de testes automatizados.
 
-- Pratica de desenvolvimento em C# e .NET;
-- Implementacao de testes unitarios com xUnit;
-- Aplicacao de boas praticas de teste automatizado;
-- Validacao de logica de programa com cobertura de testes.
+Durante o desenvolvimento, foram trabalhados os seguintes conhecimentos:
+
+* Prática de desenvolvimento em C# e .NET;
+* Implementação de testes unitários com xUnit;
+* Aplicação de conceitos de testes automatizados;
+* Validação da lógica da aplicação por meio de testes;
+* Organização de projetos e separação entre código da aplicação e código de testes.
 
 ## Autor
 
-**Artur Queiroz**  
+**Artur Queiroz**
+
 GitHub: [@Arturqueiiroz](https://github.com/Arturqueiiroz)
 
-## Licenca
+## Licença
 
-Este projeto foi desenvolvido para fins academicos e esta disponivel para estudo e contribuicoes.
+Este projeto foi desenvolvido para fins acadêmicos e está disponível para estudo e contribuições.
 
 ---
 
-*Projeto desenvolvido no contexto academico para aprendizado e pratica de testes unitarios em C#.*
+*Projeto desenvolvido no contexto acadêmico para aprendizado e prática de testes unitários em C# e .NET.*
